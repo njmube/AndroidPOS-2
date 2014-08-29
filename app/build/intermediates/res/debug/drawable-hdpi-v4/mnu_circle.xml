@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#34AADE"/>
+            <stroke android:color="#FFF" android:width="1dip"/>
+            <size android:height="50dp" android:width="50dp">
+
+
+            </size>
+
+            <corners android:radius="100dip"  />
+        </shape>
+    </item>
+
+</selector><!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/drawable-hdpi/mnu_circle.xml -->

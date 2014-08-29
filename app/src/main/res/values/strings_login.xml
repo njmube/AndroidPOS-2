@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="bgcolor">#28CE57</string>
+    <string name="login_appname">Android POS</string>
+
+    <string name="username">User name</string>
+    <string name="usr_pholder">Enter userName</string>
+    <string name="password">Password</string>
+    <string name="pwd_pholder">Enter Password</string>
+    <string name="login">Login</string>
+
+
+
+
+</resources>

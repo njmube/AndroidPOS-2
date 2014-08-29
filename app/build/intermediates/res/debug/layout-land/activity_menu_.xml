@@ -1,0 +1,164 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+
+    tools:context="www.epicmyanmar.com.andropos.Menu_Activity"
+    android:background="#07B49A">
+
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_sales"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/cart"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btn_menu" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_menu"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/plate"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+
+        android:layout_alignTop="@+id/btn_sales"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_tablemnt"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/man_eat"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+
+        android:layout_marginLeft="58dp"
+        android:layout_alignTop="@+id/btn_menu"
+        android:layout_toRightOf="@+id/btn_menu" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_report"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/chart"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btn_sales"
+        android:layout_alignLeft="@+id/btn_sales"
+        android:layout_alignStart="@+id/btn_sales" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_customers"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/user"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:layout_alignTop="@+id/btn_report"
+        android:layout_alignLeft="@+id/btn_menu"
+        android:layout_alignStart="@+id/btn_menu" />
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/btn_setting"
+        android:background="@drawable/mnu_circle"
+        android:src="@drawable/setting"
+        android:padding="20dp"
+        android:scaleType="centerInside"
+        android:layout_alignTop="@+id/btn_customers"
+        android:layout_alignLeft="@+id/btn_tablemnt"
+        android:layout_alignStart="@+id/btn_tablemnt" />
+
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/sales"
+        app:fontName="@string/font_name"
+        android:gravity="center"
+        android:id="@+id/lbl_sales"
+        android:layout_below="@+id/btn_sales"
+        android:layout_alignRight="@+id/btn_sales"
+        android:layout_alignEnd="@+id/btn_sales"
+        android:layout_alignLeft="@+id/btn_sales"
+        android:layout_alignStart="@+id/btn_sales" />
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/menu"
+        app:fontName="@string/font_name"
+        android:gravity="center"
+        android:id="@+id/lbl_menu"
+        android:layout_alignTop="@+id/lbl_sales"
+        android:layout_alignLeft="@+id/btn_menu"
+        android:layout_alignStart="@+id/btn_menu"
+        android:layout_toLeftOf="@+id/btn_tablemnt" />
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/table"
+        app:fontName="@string/font_name"
+        android:gravity="center"
+        android:id="@+id/lbl_table"
+        android:layout_alignTop="@+id/lbl_menu"
+        android:layout_alignRight="@+id/btn_tablemnt"
+        android:layout_alignEnd="@+id/btn_tablemnt"
+        android:layout_alignLeft="@+id/btn_tablemnt"
+        android:layout_alignStart="@+id/btn_tablemnt" />
+
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/reports"
+        android:gravity="center"
+        android:id="@+id/lbl_report"
+        app:fontName="@string/font_name"
+        android:layout_below="@+id/btn_report"
+        android:layout_alignLeft="@+id/btn_report"
+        android:layout_alignStart="@+id/btn_report"
+        android:layout_alignRight="@+id/btn_report"
+        android:layout_alignEnd="@+id/btn_report" />
+
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/customer"
+        android:gravity="center"
+        app:fontName="@string/font_name"
+        android:id="@+id/lbl_user"
+        android:layout_below="@+id/btn_customers"
+        android:layout_alignRight="@+id/btn_customers"
+        android:layout_alignEnd="@+id/btn_customers"
+        android:layout_alignLeft="@+id/btn_customers"
+        android:layout_alignStart="@+id/btn_customers" />
+    <CustomControls.Epic_textView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/setting"
+        android:gravity="center"
+        android:id="@+id/lbl_setting"
+        app:fontName="@string/font_name"
+        android:layout_alignTop="@+id/lbl_user"
+        android:layout_alignLeft="@+id/btn_setting"
+        android:layout_alignStart="@+id/btn_setting"
+        android:layout_alignRight="@+id/btn_setting"
+        android:layout_alignEnd="@+id/btn_setting" />
+</RelativeLayout>
+<!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/layout-land/activity_menu_.xml -->

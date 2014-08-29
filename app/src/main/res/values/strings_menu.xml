@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="sales">Sales</string>
+    <string name="menu">Menu</string>
+    <string name="table">Manage Table</string>
+    <string name="reports">Reports</string>
+    <string name="customer">Customer</string>
+    <string name="setting">Settings</string>
+    <string name="font_name">NotoSansMyanmar-Regular.ttf</string>
+    <string name="color_name">#EEE</string>
+</resources>

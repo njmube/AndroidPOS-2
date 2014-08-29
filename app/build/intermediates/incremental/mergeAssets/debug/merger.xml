@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="2" >
+
+    <dataSet config="19.1.0" >
+        <source path="/home/jr/AndroidStudioProjects/AndroidPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/assets" />
+    </dataSet>
+    <dataSet config="main" >
+        <source path="/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/assets" >
+            <file
+                name="fonts/Ubuntu-R.ttf"
+                path="/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/assets/fonts/Ubuntu-R.ttf" />
+            <file
+                name="fonts/NotoSansMyanmar-Regular.ttf"
+                path="/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/assets/fonts/NotoSansMyanmar-Regular.ttf" />
+            <file
+                name="fonts/Ubuntu-L.ttf"
+                path="/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/assets/fonts/Ubuntu-L.ttf" />
+        </source>
+    </dataSet>
+    <dataSet config="debug" >
+        <source path="/home/jr/AndroidStudioProjects/AndroidPOS/app/src/debug/assets" />
+    </dataSet>
+
+</merger>
