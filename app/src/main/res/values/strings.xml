@@ -6,6 +6,9 @@
     <string name="title_activity_customer_">Customer_Activity</string>
     <string name="action_example">Example action</string>
     <string name="action_settings">Example Settings</string>
-
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_table_">Table_Activity</string>
+    <string name="title_activity_table_activity">Table_activity</string>
+    <string name="title_activity_booking_activity">Booking_activity</string>
 
 </resources>

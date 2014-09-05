@@ -45,7 +45,7 @@ public class Main_Activity extends Activity {
 
         lbl_username.setTypeface(tf_light);
         lbl_password.setTypeface(tf_light);
-        lbl_appname.setTypeface(tf_reg);
+        lbl_appname.setTypeface(tf_reg); 
 
         txt_username.setTypeface(tf_light);
         txt_password.setTypeface(tf_light);

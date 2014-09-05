@@ -545,6 +545,12 @@
     <item name="progress_horizontal" type="id"/>
 
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/values.xml -->
+    <eat-comment />
+
+    <string name="Book">Book</string>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/19.1.0/res/values/values.xml -->
+    <eat-comment />
 
     <string name="abc_action_bar_home_description">Navigate home</string>
     <string name="abc_action_bar_up_description">Navigate up</string>
@@ -582,6 +588,7 @@
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="hello_world">Hello world!</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_login.xml -->
     <eat-comment />
@@ -607,7 +614,10 @@
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings.xml -->
     <eat-comment />
 
+    <string name="title_activity_booking_activity">Booking_activity</string>
     <string name="title_activity_customer_">Customer_Activity</string>
+    <string name="title_activity_table_">Table_Activity</string>
+    <string name="title_activity_table_activity">Table_activity</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_login.xml -->
     <eat-comment />
 

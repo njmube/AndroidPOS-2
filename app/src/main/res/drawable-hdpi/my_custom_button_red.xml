@@ -3,21 +3,21 @@
         <shape android:shape="rectangle"  >
             <corners android:radius="50dip" />
             <stroke android:width="1dip" android:color="#FFF" />
-            <solid android:color="#34B4A1"/>
+            <solid android:color="#802E2E"/>
         </shape>
     </item>
     <item android:state_focused="true">
         <shape android:shape="rectangle"  >
             <corners android:radius="50dip" />
             <stroke android:width="1dip" android:color="#FFF" />
-            <solid android:color="#34B4A1"/>
+            <solid android:color="#7E0303"/>
         </shape>
     </item>
     <item >
         <shape android:shape="rectangle"  >
             <corners android:radius="50dip" />
             <stroke android:width="1dip" android:color="#FFF" />
-            <solid android:color="#34B4A1"/>
+            <solid android:color="#7E0303"/>
         </shape>
     </item>
-</selector><!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/drawable-hdpi/my_custom_button.xml -->
+</selector>

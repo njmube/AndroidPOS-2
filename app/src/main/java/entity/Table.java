@@ -49,4 +49,15 @@ public class Table {
     public void setTable_status(Table_status table_status) {
         this.table_status = table_status;
     }
+
+
+    private boolean is_reserved;
+
+    public boolean isIs_reserved() {
+        return is_reserved;
+    }
+
+    public void setIs_reserved(boolean is_reserved) {
+        this.is_reserved = is_reserved;
+    }
 }
