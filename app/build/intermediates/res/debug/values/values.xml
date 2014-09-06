@@ -545,6 +545,10 @@
     <item name="progress_horizontal" type="id"/>
 
     <integer name="abc_max_action_buttons">2</integer>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_booking.xml -->
+    <eat-comment />
+
+    <string name="Add">Add </string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/values.xml -->
     <eat-comment />
 
@@ -579,11 +583,23 @@
     <eat-comment />
 
     <string name="bgcolor">#28CE57</string>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_booking.xml -->
+    <eat-comment />
+
+    <string name="cancel">Cancel</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_menu.xml -->
     <eat-comment />
 
     <string name="color_name">#EEE</string>
     <string name="customer">Customer</string>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_booking.xml -->
+    <eat-comment />
+
+    <string name="dialog_message">Your Order is about to Reserve.\n Are you Sure?</string>
+    <string name="dialog_title">Order Confirm</string>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_menu.xml -->
+    <eat-comment />
+
     <string name="font_name">NotoSansMyanmar-Regular.ttf</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings.xml -->
     <eat-comment />
@@ -594,11 +610,15 @@
     <eat-comment />
 
     <string name="login">Login</string>
-    <string name="login_appname">Android POS</string>
+    <string name="login_appname">Ezy Reserve</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_menu.xml -->
     <eat-comment />
 
     <string name="menu">Menu</string>
+    <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_booking.xml -->
+    <eat-comment />
+
+    <string name="ok">OK</string>
     <!-- From: file:/home/jr/AndroidStudioProjects/AndroidPOS/app/src/main/res/values/strings_login.xml -->
     <eat-comment />
 

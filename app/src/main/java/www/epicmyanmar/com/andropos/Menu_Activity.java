@@ -36,7 +36,9 @@ public class Menu_Activity extends  ActionBarActivity {
 
 
     public static final String url="http://10.56.66.85/slimtest/tables";
-    public static final String post_url="http://10.56.66.85/slimtest/post/Win_ha";
+    public static final String post_url="http://10.56.66.85/slimtest/post/api";
+
+    public static final String post_booking="http://10.56.67.24/sharky/api/get_booking/";
 
 
     //static arraylist to pass list returned from async
@@ -80,6 +82,7 @@ public class Menu_Activity extends  ActionBarActivity {
     public void fire(){
         Intent intent=new Intent(this,Table_activity.class);
         startActivity(intent);
+        overridePendingTransition(R.anim.anim_out_y,R.anim.anim_in_y);
     }
 
 

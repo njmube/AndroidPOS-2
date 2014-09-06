@@ -1,6 +1,8 @@
 package CustomControls;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -38,9 +40,32 @@ public class TableListView_Adapter extends ArrayAdapter<Table> {
 
         TextView txt_label=(TextView) rowView.findViewById(R.id.lbltable_name);
         TextView txt_status=(TextView) rowView.findViewById(R.id.lbltable_status);
-        txt_label.setText(values.get(position).getTable_name());
-        txt_status.setText(values.get(position).getTable_id());
+        TextView lbl_button=(TextView) rowView.findViewById(R.id.lbl_button);
 
+
+        txt_label.setText(values.get(position).getTable_name());
+
+
+
+
+            if(values.get(position).isIs_reserved()==true) {
+
+                txt_status.setBackgroundColor(Color.parseColor("#FF0000"));
+                txt_status.setText("Reserved \nSince "+values.get(position).getFrom_time()+" To "+values.get(position).getTo_time());
+                lbl_button.setText("Wait");
+                lbl_button.setBackgroundColor(Color.parseColor("#FF0000"));
+                // lbl_fromtime.setText("Reserve From\n"+values.get(position).getFrom_time());
+                //lbl_totime.setText("Reserve To\n"+values.get(position).getTo_time());
+            }else {
+
+                txt_status.setBackgroundColor(Color.parseColor("#29CF5E"));
+                txt_status.setText("Available");
+                lbl_button.setText("Book");
+                lbl_button.setBackgroundColor(Color.parseColor("#29CF5E"));
+                // lbl_fromtime.setText("----");
+                // lbl_totime.setText("----");
+
+            }
 
         return rowView;
     }

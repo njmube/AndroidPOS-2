@@ -2,6 +2,7 @@ package www.epicmyanmar.com.andropos;
 
 import android.app.ListActivity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -91,6 +92,11 @@ public class Table_activity extends ListActivity {
             Table selectedValue = (Table) getListAdapter().getItem(position);
             Toast.makeText(this, selectedValue.getTable_name(), Toast.LENGTH_SHORT).show();
 
+
+            Intent intent=new Intent(this,Booking_activity.class);
+            startActivity(intent);
+            overridePendingTransition(R.anim.anim_out,R.anim.anim_in);
+
         }catch(Exception e){
 
             Log.i("s",e.getMessage().toString());
@@ -164,7 +170,14 @@ public class Table_activity extends ListActivity {
                         Table t = new Table();
                         t.setId(Integer.parseInt(o.getString("id")));
                         t.setTable_name(o.getString("table_name"));
-                        t.setIs_reserved(Boolean.parseBoolean(o.getString("is_reserved")));
+                        if(Integer.parseInt(o.getString("is_reserved").toString())==0){
+                            t.setIs_reserved(false);
+                        }else{
+                            t.setIs_reserved(true);
+                        }
+
+                        t.setFrom_time(o.getString("from_time"));
+                        t.setTo_time(o.getString("To_time"));
                         arrlist_table.add(t);
                     }
 

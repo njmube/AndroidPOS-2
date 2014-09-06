@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Add">Add </string>
+    <string name="dialog_message">Your Order is about to Reserve.\n Are you Sure?</string>
+    <string name="dialog_title">Order Confirm</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+</resources>

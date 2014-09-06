@@ -6,14 +6,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
+
     tools:context="www.epicmyanmar.com.andropos.Booking_activity">
 
 
     <EditText
         android:layout_width="wrap_content"
+
         android:layout_height="wrap_content"
         android:id="@+id/txt_startdate"
+        android:hint="Booking Date"
+
         android:layout_alignParentTop="true"
+        android:editable="false"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/btn_datepicker" />
@@ -22,15 +27,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_datepicker"
-        android:layout_alignParentTop="true"
+        android:background="@drawable/calendar_icon"
+        android:layout_alignTop="@+id/txt_startdate"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginRight="81dp" />
+        android:layout_alignParentEnd="true" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/txt_starttime"
+        android:hint="Start Time"
+        android:editable="false"
         android:layout_below="@+id/txt_startdate"
         android:layout_alignRight="@+id/txt_startdate"
         android:layout_alignEnd="@+id/txt_startdate"
@@ -41,7 +48,133 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_timepicker"
+        android:background="@drawable/clock"
         android:layout_below="@+id/txt_startdate"
-        android:layout_toRightOf="@+id/txt_starttime" />
+        android:layout_alignLeft="@+id/btn_datepicker"
+        android:layout_alignStart="@+id/btn_datepicker" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_endtime"
+        android:layout_below="@+id/txt_starttime"
+        android:layout_alignParentLeft="true"
+        android:hint="End Time"
+        android:editable="false"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txt_starttime"
+        android:layout_alignEnd="@+id/txt_starttime" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/clock"
+        android:id="@+id/btn_endtimepicker"
+        android:layout_below="@+id/txt_starttime"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/food_spin"
+        android:layout_alignBottom="@+id/txt_itemcount"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txt_itemcount" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:maxLength="3"
+        android:hint="Count"
+        android:id="@+id/txt_itemcount"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btn_addtoList"
+        android:layout_alignStart="@+id/btn_addtoList" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:orientation="horizontal"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/btn_book">
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:textColor="#FFF"
+            android:text="Food"
+            android:id="@+id/lbl_itemname"
+            android:textAlignment="center"
+            android:layout_marginRight="1dp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#FF0000"
+            android:id="@+id/lbl_count"
+            android:gravity="center"
+            android:textColor="#FFF"
+            android:text="1"
+            />
+        
+        </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Add"
+        android:id="@+id/btn_addtoList"
+        android:textColor="#FFF"
+        android:background="@drawable/my_custom_button_red"
+        android:layout_below="@+id/food_spin"
+        android:layout_alignRight="@+id/linearLayout"
+        android:layout_alignEnd="@+id/linearLayout" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/username_icon"
+        android:id="@+id/txt_customer_name"
+        android:hint="Customer Name"
+        android:textColorHint="#000"
+        android:layout_below="@+id/txt_endtime"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/btn_endtimepicker" />
+
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:text="Book"
+        android:scaleType="centerInside"
+        android:background="@drawable/my_custom_button_red"
+        android:src="@drawable/man_eat"
+        android:id="@+id/btn_book"
+        android:layout_below="@+id/btn_addtoList"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt_phoneno"
+        android:hint="Phone No"
+        android:drawableLeft="@drawable/phone"
+        android:layout_below="@+id/txt_customer_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/txt_customer_name"
+        android:layout_alignEnd="@+id/txt_customer_name" />
 
 </RelativeLayout>

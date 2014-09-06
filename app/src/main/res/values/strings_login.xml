@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="bgcolor">#28CE57</string>
-    <string name="login_appname">Android POS</string>
+    <string name="login_appname">Ezy Reserve</string>
 
     <string name="username">User name</string>
     <string name="usr_pholder">Enter userName</string>
